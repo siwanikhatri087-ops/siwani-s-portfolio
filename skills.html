@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siwani - Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span>Siwani</span></div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-user"></i> About</a>
+                <a href="skills.html" class="active"><i class="fas fa-bolt"></i> Skills</a>
+                <a href="services.html"><i class="fas fa-tools"></i> Services</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <i class="fa fa-times close-icon" onclick="closeMenu()"></i>
+            <a href="index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+            <a href="skills.html" onclick="closeMenu()"><i class="fas fa-bolt"></i> Skills</a>
+            <a href="services.html" onclick="closeMenu()"><i class="fas fa-tools"></i> Services</a>
+            <a href="contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <section class="page-section">
+        <div class="section-box">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and web standards</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design and animations</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive web applications</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                    <span class="skill-percent">88%</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User experience and interface design</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                    <span class="skill-percent">75%</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Version Control</h3>
+                    <p>Git and GitHub proficiency</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+                    <span class="skill-percent">82%</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siwani - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span>Siwani</span></div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-user"></i> About</a>
+                <a href="skills.html"><i class="fas fa-bolt"></i> Skills</a>
+                <a href="services.html"><i class="fas fa-tools"></i> Services</a>
+                <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <i class="fa fa-times close-icon" onclick="closeMenu()"></i>
+            <a href="index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+            <a href="skills.html" onclick="closeMenu()"><i class="fas fa-bolt"></i> Skills</a>
+            <a href="services.html" onclick="closeMenu()"><i class="fas fa-tools"></i> Services</a>
+            <a href="contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <section class="page-section">
+        <div class="section-box">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-row">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:siwani@example.com">Siwanikhatri087@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:9703998392">+977 9702998392</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 11:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="https://github.com/siwanikhatri087-ops" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/siwani-khatri-6b557a397/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/siwani.khatri.927416" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/siwanikhatri" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="sendMessage(event)">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="cv-btn">Send Message</button>
+                    <p id="form-msg" class="form-msg"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

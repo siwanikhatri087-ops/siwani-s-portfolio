@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siwani - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span>Siwani</span></div>
+            <div class="nav-links">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-user"></i> About</a>
+                <a href="skills.html"><i class="fas fa-bolt"></i> Skills</a>
+                <a href="services.html"><i class="fas fa-tools"></i> Services</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <i class="fa fa-bars menu-icon" onclick="openMenu()"></i>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <div class="dropdown" id="dropdown">
+            <i class="fa fa-times close-icon" onclick="closeMenu()"></i>
+            <a href="index.html" onclick="closeMenu()"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" onclick="closeMenu()"><i class="fas fa-user"></i> About</a>
+            <a href="skills.html" onclick="closeMenu()"><i class="fas fa-bolt"></i> Skills</a>
+            <a href="services.html" onclick="closeMenu()"><i class="fas fa-tools"></i> Services</a>
+            <a href="contact.html" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section class="home-section">
+
+        <!-- LEFT PANEL (Quick Info + Navigation) -->
+        <aside class="side-panel" id="side-panel">
+            <button class="panel-btn" onclick="togglePanel()">‹</button>
+
+            <div class="panel-inner">
+                <!-- Quick Info -->
+                <div class="quick-info">
+                    <h3>Quick Info</h3>
+                    <div class="info-row">
+                        <i class="fas fa-user"></i>
+                        <p><strong>Name:</strong> Siwani Khatri</p>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><strong>Location:</strong> Kathmandu, Nepal</p>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-code"></i>
+                        <p><strong>Role:</strong> Web Developer</p>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-briefcase"></i>
+                        <p><strong>Experience:</strong> 1+ Years</p>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p><strong>Education:</strong> BSc Computer Systems Engineering</p>
+                    </div>
+                    <hr class="divider">
+                    <h4>Languages</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                    <h4>Tools</h4>
+                    <p>VS Code, Git, GitHub, Figma</p>
+                </div>
+
+                <!-- Navigation inside panel -->
+                <div class="panel-nav">
+                    <h4>Navigation</h4>
+                    <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html"><i class="fas fa-user"></i> About</a>
+                    <a href="skills.html"><i class="fas fa-bolt"></i> Skills</a>
+                    <a href="services.html"><i class="fas fa-tools"></i> Services</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+            </div>
+
+            <!-- Collapsed mini view -->
+            <div class="panel-collapsed-view">
+                <p><strong>Siwani</strong></p>
+                <p>Web Dev</p>
+                <p>Nepal</p>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="photo-box">
+                <img src="photo.jpg" alt="Siwani">
+            </div>
+            <div class="text-box">
+                <h1>Hi, I'm <span class="highlight">Siwani</span></h1>
+                <h2 class="typewriter-text"><span id="typed"></span><span class="cursor">|</span></h2>
+                <p>Passionate web developer creating visually engaging user experiences.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/siwanikhatri087-ops" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/siwani.khatri.927416" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/siwani-khatri-6b557a397/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/siwanikhatri" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                </div>
+                <a href="resume.pdf" download>
+                    <button class="cv-btn">Download CV</button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
